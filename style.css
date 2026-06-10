@@ -1,0 +1,248 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Navbar */
+
+header {
+    background: #004aad;
+    padding: 15px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Hero Section */
+
+.hero {
+    height: 90vh;
+    background: url("school.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 12px 25px;
+    border: none;
+    background: yellow;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* About */
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    color: #004aad;
+}
+
+/* Notice */
+
+.notice {
+    padding: 60px 20px;
+    background: #e8f0ff;
+    text-align: center;
+}
+
+.notice h2 {
+    margin-bottom: 20px;
+    color: #004aad;
+}
+
+.notice marquee {
+    height: 100px;
+}
+
+/* Teachers */
+
+.teachers {
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+}
+
+.teachers h2 {
+    margin-bottom: 30px;
+    color: #004aad;
+}
+
+.teacher-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Gallery */
+
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+    background: #e8f0ff;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    color: #004aad;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    color: #004aad;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 350px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px 25px;
+    border: none;
+    background: #004aad;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    background: #002b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 90%;
+    }
+}
